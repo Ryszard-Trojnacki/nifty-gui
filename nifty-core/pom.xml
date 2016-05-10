@@ -3,14 +3,13 @@
   <parent>
     <groupId>com.github.nifty-gui</groupId>
     <artifactId>nifty-main</artifactId>
-    <version>1.4.2-SNAPSHOT</version>
+    <version>1.4.3-SNAPSHOT</version>
   </parent>
   <artifactId>nifty</artifactId>
   <packaging>jar</packaging>
   <name>Nifty Core</name>
   <url>http://nifty-gui.sourceforge.net/projects/nifty/</url>
   <description>Nifty GUI is a Java Library that supports the building of interactive user interfaces for games or similar applications. It utilizes OpenGL for rendering and it can be easily integrated into many rendering systems. The configuration of the GUI is stored in xml files with little supporting Java code. In short Nifty helps you to layout stuff, display it in a cool way and interact with it :)</description>
-
   <developers>
     <developer>
       <id>void256</id>
@@ -30,22 +29,10 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.bushe</groupId>
-      <artifactId>eventbus</artifactId>
-      <version>1.4</version>
-      <type>jar</type>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>jsr305</artifactId>
       <version>2.0.2</version>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.jglfont</groupId>
-      <artifactId>jglfont-core</artifactId>
-      <version>1.4</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -80,11 +67,6 @@
             <descriptor>src/assemble/nifty.xml</descriptor>
           </descriptors>
         </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.0-beta-3</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -157,7 +139,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>2.3.1</version>
         <reportSets>
           <reportSet>
             <reports>
@@ -172,16 +153,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
         <version>2.5</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.7</version>
-        <configuration>
-          <links>
-            <link>http://java.sun.com/j2se/1.5.0/docs/api</link>
-          </links>
-        </configuration>
       </plugin>
     </plugins>
   </reporting>

@@ -1,14 +1,14 @@
 # Nifty GUI
 
-As of Nifty 1.4.2 we're targeting a Maven central release. It's not released yet but here are the presumably details:
+Nifty is available in the Maven central:
 
 ```XML
 <groupId>com.github.nifty-gui</groupId>
 <artifactId>nifty</artifactId>
-<version>1.4.2-SNAPSHOT</version>
+<version>1.4.2</version>
 ```
 
-You'll still need to add both repositories to your pom.xml for now, at least:
+To use SNAPSHOT builds of Nifty you'll still need to add the Sonatype snapshots repositories to your pom.xml.
 
 ```XML
   <repositories>
@@ -16,12 +16,6 @@ You'll still need to add both repositories to your pom.xml for now, at least:
     <repository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    </repository>
-
-    <!-- still needed for some other dependencies not yet available in central like jglfont -->
-    <repository>
-      <id>nifty-maven-repo.sourceforge.net</id>
-      <url>http://nifty-gui.sourceforge.net/nifty-maven-repo</url>
     </repository>
   </repositories>
 ```

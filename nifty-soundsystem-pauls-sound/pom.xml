@@ -3,35 +3,16 @@
     <parent>
         <groupId>com.github.nifty-gui</groupId>
         <artifactId>nifty-main</artifactId>
-        <version>1.4.2-SNAPSHOT</version>
+        <version>1.4.3-SNAPSHOT</version>
     </parent>
     <artifactId>nifty-pauls-soundsystem</artifactId>
     <name>Nifty Sound Device for Pauls-Soundsystem</name>
+    <description>Nifty Sound Device for Pauls-Soundsystem</description>
     <dependencies>
         <dependency>
             <groupId>com.github.nifty-gui</groupId>
             <artifactId>nifty</artifactId>
-            <version>1.4.2-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.paulscode.soundsystem</groupId>
-            <artifactId>soundsystem</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.paulscode.soundsystem</groupId>
-            <artifactId>codecjorbis</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.paulscode.soundsystem</groupId>
-            <artifactId>codecwav</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-        <dependency>
-          <groupId>com.paulscode.soundsystem</groupId>
-          <artifactId>libraryjavasound</artifactId>
-          <version>0.0.1</version>
+            <version>1.4.3-SNAPSHOT</version>
         </dependency>
     </dependencies>
     <reporting>
@@ -39,7 +20,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>2.1.2</version>
                 <reportSets>
                     <reportSet>
                         <reports>
